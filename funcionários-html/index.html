@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="author" content="Ricardo Vinciguerra">
+  <meta name="description" content="Cadastro de funcionários para a empresa X">
+
+  <title>Cadastro de funcionários</title>
+</head>
+
+<body>
+  <header align="center">
+    <a href="/">
+      <svg width="80" viewBox="0 0 128 128">
+        <g id="surface1">
+          <path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;"
+            d="M 55.296875 69.324219 L 72.703125 69.324219 L 64 48.382812 Z M 55.296875 69.324219 M 64 15.359375 L 16.332031 32.359375 L 23.601562 95.386719 L 64 117.761719 L 104.398438 95.386719 L 111.667969 32.359375 Z M 93.746094 93.492188 L 82.636719 93.492188 L 76.644531 78.539062 L 51.355469 78.539062 L 45.363281 93.492188 L 34.253906 93.492188 L 64 26.675781 Z M 93.746094 93.492188 ">
+          </path>
+        </g>
+      </svg>
+    </a>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="/employee-list.html">Listagem de funcionários</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <br>
+
+  <main align="center" id="main-content">
+    <header>
+      <h1>Cadastro de funcionários</h1>
+      <p>Preencha as informações abaixo para cadastrar um funcionário</p>
+    </header>
+
+    <br>
+    <hr>
+    <br>
+
+    <form>
+      <div>
+        <label for="fullname">Nome completo:</label>
+        <br>
+        <input id="fullname" name="fullname" type="text">
+      </div>
+
+      <br>
+
+      <div>
+        <label for="cpf">CPF:</label>
+        <br>
+        <input id="cpf" name="cpf" type="text">
+      </div>
+
+      <br>
+
+      <div>
+        <label for="birthday">Data de nascimento:</label>
+        <br>
+        <input id="birthday" name="birthday" type="date">
+      </div>
+
+      <br>
+
+      <div>
+        <label>Gênero:</label>
+        <br>
+        <div>
+          <div>
+            <label for="male">Masculino</label>
+            <input id="male" name="gender" value="male" type="radio">
+          </div>
+
+          <div>
+            <label for="female">Feminino</label>
+            <input id="female" name="gender" value="male" type="radio">
+          </div>
+
+          <div>
+            <label for="other">Outro</label>
+            <input id="other" name="gender" value="male" type="radio">
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <div>
+        <label for="email">Email:</label>
+        <br>
+        <input id="email" name="email" type="email">
+      </div>
+
+      <br>
+
+      <div>
+        <label for="phone">Telefone:</label>
+        <br>
+        <input id="phone" name="phone" type="tel">
+      </div>
+
+      <br>
+
+      <div>
+        <label for="role">Cargo:</label>
+        <br>
+        <select name="role" id="role">
+          <option value="frontend-developer">Desenvolvedor frontend</option>
+          <option value="backend-developer">Desenvolvedor backend</option>
+          <option value="mobile-developer">Desenvolvedor mobile</option>
+          <option value="tech-lead">Tech lead</option>
+        </select>
+      </div>
+
+      <br>
+
+      <div>
+        <label for="salary">Salário:</label>
+        <br>
+        <input id="salary" name="salary" type="number">
+      </div>
+
+      <br>
+
+      <div>
+        <label for="profile-img">Foto do usuário:</label>
+        <br>
+        <input id="profile-img" name="profile-img" type="file" accept="image/*">
+      </div>
+
+      <br>
+
+      <div>
+        <label>Habilidades:</label>
+        <br>
+        <div>
+          <div>
+            <label for="comunication">Comunicação</label>
+            <input id="comunication" value="comunication" name="skills" type="checkbox">
+          </div>
+
+          <div>
+            <label for="leadership">Liderança</label>
+            <input id="leadership" value="leadership" name="skills" type="checkbox">
+          </div>
+
+          <div>
+            <label for="organized">Organizado</label>
+            <input id="organized" value="organized" name="skills" type="checkbox">
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <div>
+        <label for="username">Usuário:</label>
+        <br>
+        <input id="username" name="username" type="text">
+      </div>
+
+      <br>
+
+      <div>
+        <label for="password">Senha:</label>
+        <br>
+        <input id="password" name="password" type="password">
+      </div>
+
+      <br>
+
+      <div>
+        <label for="observation">Observações:</label>
+        <br>
+        <textarea name="observation" id="observation"></textarea>
+      </div>
+
+      <button>Cadastrar</button>
+    </form>
+  </main>
+
+  <br>
+  <br>
+
+  <footer align="center">
+    <small>&copy; Todos os direitos reservados</small>
+    <a href="#main-content">Ir para o topo</a>
+  </footer>
+</body>
+
+</html>
